@@ -23,5 +23,5 @@ RUN apk add --no-cache --virtual .gyp \
   && npm install pm2 -g \
   && npm cache clean --force
 
-EXPOSE 1883
+EXPOSE 1883 3000
 CMD ["pm2-docker", "src/broker.js"]
